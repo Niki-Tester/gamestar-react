@@ -1,13 +1,10 @@
 .main {
-  display: flex;
   background-color: #424242;
   color: #ffca28;
   padding: 0.25rem;
   font-size: 1rem;
-  justify-content: center;
 }
-
-.main nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
