@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  background-color: #424242;
+  color: #ffca28;
+  padding: 0.25rem;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.main nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLogo {
+  margin-top: 5px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+}
+
+.navLinks li:not(:last-child) {
+  margin-right: 0.75rem;
+}
+
+.navLinks a {
+  color: #ffca28;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background-color ease-in-out 250ms;
+  transition: border ease-in-out 400ms;
+  border: 1px dashed transparent;
+}
+
+.navLinks a:hover {
+  background-color: #00000033;
+  border: 1px solid #ffca28;
+}

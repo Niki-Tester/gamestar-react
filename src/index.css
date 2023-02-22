@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Saira+Stencil+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +12,14 @@ html {
 
 body {
   height: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 #root {
   height: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
 }

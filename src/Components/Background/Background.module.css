@@ -1,16 +1,15 @@
 .main {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   height: 100%;
+  z-index: -1;
 }
 
 .background {
-  position: absolute;
-  background-position: center center;
-  background-size: cover;
+  position: fixed;
 }
 
 .overlay {
