@@ -9,6 +9,7 @@ const HomePage = () => {
 
   const reviews = [
     {
+      id: 1,
       imageUrl:
         "https://images.igdb.com/igdb/image/upload/t_cover_big/co4804.jpg",
       name: "sailwind",
@@ -24,7 +25,7 @@ const HomePage = () => {
       </section>
       <GameCardGrid>
         {reviews.map((review) => (
-          <GameCard review={review} />
+          <GameCard review={review} key={review.id} />
         ))}
       </GameCardGrid>
     </PageContainer>
