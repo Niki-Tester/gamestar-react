@@ -1,6 +1,7 @@
 import styles from "./NavBar.module.css";
 import logo from "./gamestar_logo_light.webp";
 import PageContainer from "../PageContainer/PageContainer";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -8,19 +9,19 @@ export const NavBar = () => {
       <PageContainer>
         <nav className={styles.navbar}>
           <div className={styles.navLogo}>
-            <a href="/">
+            <Link to="/">
               <img src={logo} alt="gamestar logo" height="52px" />
-            </a>
+            </Link>
           </div>
           <ul className={styles.navLinks}>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/">Register</a>
+              <Link to="/register">Register</Link>
             </li>
             <li>
-              <a href="/">Login</a>
+              <Link to="/">Login</Link>
             </li>
           </ul>
         </nav>
