@@ -4,6 +4,7 @@
   text-align: center;
   transition: box-shadow ease-in-out 200ms;
   font-size: 1.1rem;
+  font-weight: 300;
   text-transform: capitalize;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
