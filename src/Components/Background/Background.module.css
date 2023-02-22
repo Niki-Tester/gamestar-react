@@ -1,19 +1,10 @@
 .main {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 100%;
+  position: fixed;
   z-index: -1;
 }
 
-.background {
-  position: fixed;
-}
-
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
