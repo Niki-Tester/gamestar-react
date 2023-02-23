@@ -1,8 +1,13 @@
 import styles from "./GameCard.module.css";
 import noCoverArt from "./cover_art_placeholder.webp";
 import { Link } from "react-router-dom";
+import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
+import useFetch from "../../Hooks/useFetch";
 
 const GameCard = ({ game }) => {
+  const endpoint = `rating/${game.id}`;
+  const { data, loading, error } = useFetch(endpoint);
+
   return (
     <div className={styles.cards}>
       <div className={styles.card}>
@@ -21,12 +26,16 @@ const GameCard = ({ game }) => {
             <div className={styles.cardContent}>
               <p title={game.name}>{game.name}</p>
               <div className={styles.rating}>
-                <div className={styles.ratingOuter}>
-                  <div
-                    className={styles.ratingInner}
-                    style={{ width: `${game.rating}%` }}
-                  ></div>
-                </div>
+                {loading && <LoadingSpinner />}
+                {data && (
+                  <div className={styles.ratingOuter}>
+                    <div
+                      className={styles.ratingInner}
+                      style={{ width: `${data?.rating}%` }}
+                    ></div>
+                  </div>
+                )}
+                {error && console.error(error)}
               </div>
             </div>
           </div>
