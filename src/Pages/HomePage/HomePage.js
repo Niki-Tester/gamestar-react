@@ -19,17 +19,14 @@ const HomePage = () => {
       {loading && <LoadingSpinner />}
       {games && (
         <GameCardGrid>
-          {games
-            ? games.map((game) => {
-                if (game.cover_art === "/static/images/no_cover.webp") {
-                  game.cover_art = undefined;
-                }
-                return <GameCard game={game} key={game.id} />;
-              })
-            : "Loading Games..."}
+          {games.map((game) => {
+            if (game.cover_art === "/static/images/no_cover.webp")
+              game.cover_art = undefined;
+            return <GameCard game={game} key={game.id} />;
+          })}
         </GameCardGrid>
       )}
-      {error && console.log(error)}
+      {error && console.error(error)}
     </PageContainer>
   );
 };
