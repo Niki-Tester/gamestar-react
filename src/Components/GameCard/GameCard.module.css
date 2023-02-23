@@ -16,6 +16,10 @@
   transform: scale(1.005);
 }
 
+.card a {
+  text-decoration: none;
+}
+
 .cardImage img {
   width: 100%;
 }
