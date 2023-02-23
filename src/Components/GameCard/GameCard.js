@@ -1,7 +1,7 @@
 import styles from "./GameCard.module.css";
 import noCoverArt from "./cover_art_placeholder.webp";
 import { Link } from "react-router-dom";
-import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
+import SmallLoadingSpinner from "../SmallLoadingSpinner/SmallLoadingSpinner";
 import useFetch from "../../Hooks/useFetch";
 
 const GameCard = ({ game }) => {
@@ -26,7 +26,7 @@ const GameCard = ({ game }) => {
             <div className={styles.cardContent}>
               <p title={game.name}>{game.name}</p>
               <div className={styles.rating}>
-                {loading && <LoadingSpinner />}
+                {loading && <SmallLoadingSpinner />}
                 {data && (
                   <div className={styles.ratingOuter}>
                     <div
