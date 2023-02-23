@@ -10,7 +10,7 @@ const useFetch = (endpoint) => {
     setData(null);
     setError(null);
 
-    fetch(`http://127.0.0.1:9554/${endpoint}`)
+    fetch(`https://gamestar-react-server.onrender.com/${endpoint}`)
       .then((res) => res.json())
       .then((data) => {
         setLoading(false);
