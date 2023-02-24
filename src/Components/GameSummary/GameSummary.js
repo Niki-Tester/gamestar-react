@@ -1,4 +1,6 @@
+import GameRating from "../GameRating/GameRating";
 import styles from "./GameSummary.module.css";
+
 const GameSummary = ({ game }) => {
   return (
     <div className={styles.main}>
@@ -8,7 +10,7 @@ const GameSummary = ({ game }) => {
         alt={`${game.name} cover art`}
       />
       <h2 className={styles.name}>{game.name}</h2>
-      <h3 className={styles.rating}>Rating</h3>
+      <GameRating gameId={game.id} />
       <p className={styles.summary}>{game.summary}</p>
     </div>
   );
