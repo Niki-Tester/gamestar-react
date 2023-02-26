@@ -10,6 +10,7 @@ const GameSummary = ({ game }) => {
         alt={`${game.name} cover art`}
       />
       <h2 className={styles.name}>{game.name}</h2>
+      <p className={styles.ratingText}>Overall Rating:</p>
       <GameRating gameId={game.id} />
       <p className={styles.summary}>{game.summary}</p>
     </div>

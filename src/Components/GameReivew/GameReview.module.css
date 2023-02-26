@@ -1,0 +1,13 @@
+.main {
+  padding: 1rem;
+  background-color: #424242;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  box-shadow: -1px 1px #ffca28aa;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}

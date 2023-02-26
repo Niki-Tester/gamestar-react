@@ -1,7 +1,6 @@
 .rating {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
 }
 
 .ratingOuter {
@@ -23,7 +22,7 @@
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   color: #999;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .ratingInner::before {
@@ -31,5 +30,5 @@
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   color: #f8ce0b;
-  font-size: 2rem;
+  font-size: 1rem;
 }
