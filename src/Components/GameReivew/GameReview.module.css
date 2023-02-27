@@ -11,3 +11,17 @@
   margin-bottom: 0.5rem;
   text-transform: capitalize;
 }
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.likes i {
+  margin-right: 0.5rem;
+  color: #ffca28;
+}
+
+.username {
+  text-transform: capitalize;
+}
