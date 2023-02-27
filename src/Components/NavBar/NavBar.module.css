@@ -20,10 +20,6 @@
   list-style: none;
 }
 
-.navLinks li:not(:last-child) {
-  margin-right: 0.75rem;
-}
-
 .navLinks a {
   color: #ffca28;
   text-decoration: none;
