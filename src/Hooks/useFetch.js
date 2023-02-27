@@ -11,7 +11,7 @@ const useFetch = (endpoint) => {
     setData(null);
     setError(null);
 
-    fetch(`http://127.0.0.1:9554/${endpoint}`, {
+    fetch(`https://gamestar-react-server.onrender.com/${endpoint}`, {
       signal: abortController.signal,
     })
       .then((res) => res.json())
