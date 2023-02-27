@@ -9,16 +9,17 @@ const GameReview = ({ review }) => {
     <div className={styles.main}>
       <h3 className={styles.heading}>{review.heading}</h3>
       <div className={styles.info}>
-        <GameRating gameId={review.game_id} />
+        <div className={styles.rating}>
+          <GameRating gameId={review.game_id} />
+        </div>
         <div className={styles.likes}>
           <i className="fa-regular fa-heart"></i>
           <span>{review.likes.length}</span>
         </div>
         {loading && <SmallLoadingSpinner />}
         {user && (
-          <p>
-            <i className="fa-regular fa-user"></i>{" "}
-            <span className={styles.username}>{user.username}</span>
+          <p className={styles.username}>
+            <i className="fa-regular fa-user"></i> <span>{user.username}</span>
           </p>
         )}
         {error && console.error(error.message)}

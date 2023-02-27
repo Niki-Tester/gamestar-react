@@ -15,6 +15,15 @@
 .info {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+}
+
+.rating {
+  width: 33%;
+}
+
+.likes {
+  width: 33%;
 }
 
 .likes i {
@@ -24,4 +33,10 @@
 
 .username {
   text-transform: capitalize;
+  width: 33%;
+}
+
+.username i {
+  color: #ffca28;
+  margin-right: 0.25rem;
 }
