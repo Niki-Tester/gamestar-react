@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import PageContainer from "../../Components/PageContainer/PageContainer";
 import styles from "./Register.module.css";
 
@@ -63,7 +64,7 @@ const Register = () => {
                 Register
               </button>
               <p>
-                Already Registered? <a href="/login">Log In</a>
+                Already Registered? <Link to="/login">Log In</Link>
               </p>
             </div>
           </form>
