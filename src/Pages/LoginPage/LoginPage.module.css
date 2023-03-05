@@ -1,0 +1,104 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #424242;
+  text-align: center;
+  width: 450px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem;
+  box-shadow: -5px 8px 6px 3px #00000077;
+}
+
+.content h3 {
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #ffca28;
+}
+
+.content p {
+  margin-top: 0.25rem;
+}
+
+.loginForm {
+  margin-top: 2rem;
+}
+
+.loginForm label {
+  display: none;
+}
+
+.loginForm i {
+  color: #ffca28;
+  font-size: 1.75rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.loginForm input {
+  margin-bottom: 1rem;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  height: 3rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  width: 80%;
+  color: #fff;
+}
+
+.loginForm input:focus {
+  outline: none;
+  border-bottom: #ffca28 1px solid;
+  transition: all ease-in-out 300ms;
+}
+
+.loginForm input::placeholder {
+  color: #ccc;
+}
+
+.loginForm button {
+  cursor: pointer;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffca28;
+  border: solid transparent 1px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: border ease-in-out 300ms;
+  transition: color ease-in-out 300ms;
+  transition: background-color ease-in-out 300ms;
+}
+
+.loginForm button:hover {
+  color: #ffca28;
+  background-color: #424242;
+  border: solid #ffca28 1px;
+}
+
+.loginForm button:disabled {
+  cursor: auto;
+  background-color: #ccc;
+  color: #424242;
+}
+.loginForm button:disabled:hover {
+  background-color: #ccc;
+  border: solid red 1px;
+  color: #424242;
+}
+.loginForm p:nth-of-type(1) {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+.loginForm p:nth-of-type(1) a {
+  color: #ffca28;
+}
