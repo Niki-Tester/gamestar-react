@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
 import PageContainer from "../../Components/PageContainer/PageContainer";
-import styles from "./Register.module.css";
+import styles from "./LoginPage.module.css";
 
-const Register = () => {
-  document.title = "GameStar | Register";
+const LoginPage = () => {
   return (
     <PageContainer>
       <div className={styles.main}>
         <div className={styles.content}>
-          <h3>Register</h3>
-          <p>Register and create your own reviews!</p>
+          <h3>Login</h3>
+          <p>Login to create your own reviews!</p>
           <form
-            className={styles.registerForm}
+            className={styles.loginForm}
             id="register-form"
             method="POST"
             action=""
@@ -45,26 +44,14 @@ const Register = () => {
                 />
                 <label htmlFor="password">Password</label>
               </div>
-              <div>
-                <i className="fa-solid fa-lock prefix"></i>
-                <input
-                  id="confirm_password"
-                  name="confirm_password"
-                  type="password"
-                  minLength="8"
-                  title="Must match Password exactly."
-                  placeholder="Confirm Password"
-                  required
-                />
-                <label htmlFor="confirm_password">Confirm Password</label>
-              </div>
             </div>
             <div>
               <button id="submit-button" type="submit" disabled>
-                Register
+                Login
               </button>
               <p>
-                Already Registered? <Link to="/login">Log In</Link>
+                Not registered yet Registered?{" "}
+                <Link to="/register">Register</Link>
               </p>
             </div>
           </form>
@@ -74,4 +61,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default LoginPage;
